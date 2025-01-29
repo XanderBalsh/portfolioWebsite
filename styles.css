@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.bottom-bar{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: space-around; /* Adjust the image horizontally */
+    align-items: center;    /* Center the image vertically if used inside a flexbox parent */
+    padding: 20px;          /* Add space around the image */
+  }
+
+  /* Style for the image */
+  .profile-image {
+    width: 300px;           /* Set a tasteful size for the image */
+    height: 300px;          /* Maintain a square aspect ratio */
+    object-fit: cover;      /* Ensure the image fills the container nicely */
+    border-radius: 50%;     /* Create a circular frame for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Add a soft shadow */
+    border: 3px solid #007acc; /* Optional: Add a border with a pop of color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover */
+  }
+
+  /* Styles for skills section*/
+  .skills-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
